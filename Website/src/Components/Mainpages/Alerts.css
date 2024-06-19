@@ -1,0 +1,280 @@
+.notifymain{
+  text-align: center;
+}
+
+.notifyheading{
+  font-size: 32px;
+  margin-bottom: 20px;
+  margin-left: 270px;
+}
+
+.notifycontainer1{
+  background-color: #95B7B7;
+  margin-left: 320px;
+  display: flex;
+  width: 68%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.notifycontainer1 h2{
+  color: azure;
+  margin-left: -640px;
+  margin-bottom: 1px;
+}
+
+.input-container {
+  position: relative;
+  margin-left: -190px;
+}
+
+
+
+.input-icon {
+  width: 20px; /* Adjust the icon size as needed */
+}  
+
+
+.rounded-input {
+  width: 50%;
+  padding: 20px; /* Adjust the padding based on the icon size */
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+
+/* date and time */
+
+.notifycontainer2{
+  display: flex;
+  flex-direction: row;
+}
+
+/* TimePicker.css */
+
+/* Style the TimePicker container */
+
+.react-datepicker {
+  font-size: 16px;
+}
+
+.custom-datepicker {
+  width: 60%;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+ 
+.react-datepicker {
+  width: 280px; /* Adjust width as needed */
+}
+
+/* time */
+
+/* TimePicker.css */
+
+.time-container{
+  width:250px;
+  margin-left: 240px;
+}
+
+.react-time-picker__inputGroup {
+  display: flex;
+}
+
+.react-time-picker__inputGroup__divider {
+  margin: 0 4px;
+}
+
+.react-time-picker__inputGroup__input {
+  flex: 1;
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 50px;
+}
+
+.react-time-picker__button {
+  display: none; /* Hide clock button */
+}
+
+.react-time-picker__inputGroup__divider {
+  display: none; /* Hide AM/PM selector */
+}
+ 
+
+/* methods */
+
+.notifycontainer3{
+  display: flex;
+  flex-direction: row;
+ 
+}
+
+.notifycontainer3 label{
+  display: flex;
+  font-weight: bold;
+  font-size: 16px;
+  color: white;
+  margin-left: 55px;
+}
+
+.notifycontainer3 input {
+  transform: scale(2.5); /* Adjust the checkbox size */
+  margin-left: 50px;
+}
+
+.messageconatiner{
+  
+  margin-left: 240px;
+}
+
+/* buttons */
+
+.lastbuttons{
+  display: flex;
+  flex-direction: row;
+ 
+}
+
+.lastbuttons h3{
+  position: absolute;
+  margin-left: 30px;
+  color: azure;
+}
+
+.lastbuttons h3:hover{
+ background-color: aliceblue;
+}
+
+.lastbuttons .cancelalert {
+   
+  margin-left: 60px;
+
+}
+
+.lastbuttons .createalert {
+  padding: 10px;
+  position: absolute;
+  border: none;
+  border-radius: 5px;
+  background-color: white;
+  color: #526564;
+  cursor: pointer;
+  margin-left: 480px;
+  margin-top: 15px;
+}
+
+/* setted alerts */
+
+.notifyheading1{
+  font-size: 32px;
+  margin-bottom: 20px;
+  margin-left: 270px;
+}
+
+.notifycontainer4{
+  background-color: #95B7B7;
+  margin-left: 320px;
+  display: flex;
+  width: 68%;
+  overflow-y: auto;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.alert-item{
+  margin-left: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+
+
+
+
+/* Media queries for responsiveness */
+
+@media only screen and (max-width: 768px) {
+
+  .notifyheading,
+  .notifyheading1 {
+    margin-left: 0;
+  }
+
+  .notifycontainer1,
+  .notifycontainer4 {
+    margin-left: 4%;
+    margin-right: 0;
+    width: 90%;
+  }
+
+  .input-container,
+  .time-container,
+  .messageconatiner {
+    margin-left: 4%;
+    max-width: 90%;
+    margin-right: 2%;
+    
+  }
+
+
+  .notifycontainer3{
+    display: flex;
+    flex-direction: row;
+    margin-left: -10%;
+    margin-right: 2%;
+  }
+  
+  .notifycontainer3 label{
+    display: flex;
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+   
+  }
+  
+  .notifycontainer3 input {
+    transform: scale(2.5); /* Adjust the checkbox size */
+    margin-left: 20%;
+  }
+  
+
+  .createalert {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+
+  .lastbuttons h3{
+    position: absolute;
+    margin-left: 30px;
+    color: azure;
+  }
+  
+  
+  
+  .lastbuttons .cancelalert {
+     
+    margin-left: 4%;
+  
+  }
+  
+  .lastbuttons .createalert {
+    margin-left: 35%;
+  }
+
+
+
+}
+

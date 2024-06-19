@@ -1,0 +1,257 @@
+name: node_tutorial
+description: A new Flutter project.
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number is used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+# In Windows, build-name is used as the major, minor, and patch parts
+# of the product and file versions while build-number is used as the build suffix.
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.1.3 <4.0.0'
+
+# Dependencies specify other packages that your package needs in order to work.
+# To automatically upgrade your package dependencies to the latest versions
+# consider running `flutter pub upgrade --major-versions`. Alternatively,
+# dependencies can be manually updated by changing the version numbers below to
+# the latest version available on pub.dev. To see which dependencies have newer
+# versions available, run `flutter pub outdated`.
+dependencies:
+  flutter:
+    sdk: flutter
+
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.2
+  http: ^1.1.0
+  intl: ^0.17.0
+  fl_chart: ^0.64.0
+  logger: ^2.0.2+1
+  audioplayers: ^5.2.1
+  speech_to_text: ^6.4.1
+  charts_flutter: ^0.12.0
+  record: ^5.0.4
+  permission_handler: ^11.0.1
+  flutter_emoji: ^2.5.1
+  advance_pdf_viewer: ^2.0.1
+  flutter_bloc: ^8.1.4
+  just_audio: ^0.9.36
+  record_mp3: ^3.0.0
+  device_info_plus: ^9.1.2
+  mongo_dart: ^0.10.0
+  flutter_ffmpeg: ^0.4.2
+  google_speech: ^4.4.0
+  # record: ^5.0.1
+  # path_provider: ^2.1.1
+  # audioplayers: ^5.2.1
+  # permission_handler: ^11.0.1
+  # dio: ^5.3.3
+  # flutter_sound: ^9.2.13
+  # fluttertoast: ^8.2.4
+  # shared_preferences: ^2.2.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # The "flutter_lints" package below contains a set of recommended lints to
+  # encourage good coding practices. The lint set provided by the package is
+  # activated in the `analysis_options.yaml` file located at the root of your
+  # package. See that file for information about deactivating specific lint
+  # rules and activating additional ones.
+  flutter_lints: ^2.0.0
+  cupertino_icons: ^1.0.2
+  avatar_glow: ^2.0.2
+  timer_count_down: ^2.2.0
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  # assets:
+  #   - images/a_dot_burr.jpeg
+  #   - images/a_dot_ham.jpeg
+  assets:
+    - assets/logo.png
+    - assets/startpage.png
+    - assets/command.png
+    - assets/google.png
+    - assets/signup.png
+    - assets/physical1.png
+    - assets/mental1.png
+    - assets/food1.png
+    - assets/name.ico
+    - assets/age.ico
+    - assets/forgett.png
+    - assets/country.ico
+    - assets/password.png
+    - assets/password1.ico
+    - assets/strength.png
+    - assets/yoga.png
+    - assets/cardio.png
+    - assets/mental.png
+    - assets/result.png
+    - assets/find.png
+    - assets/logs.png
+    - assets/log1.png
+    - assets/medical_checkup.png
+    - assets/your_alerts.png
+    - assets/alert_create.png
+    - assets/enter.png
+    - assets/fire.png
+    - assets/dashboard.png
+    - assets/alert1.png
+    - assets/feedback.png
+    - assets/dashboard1.png
+    - assets/changeprofile.png
+    - assets/subscription.png
+    - assets/terms.png
+    - assets/support.png
+    - assets/report.png
+    - assets/problem.png
+    - assets/term_cond.png
+    - assets/subscription_plan.png
+    - assets/help_support.png
+    - assets/speaker.png
+    - assets/avtr1.jpg
+    - assets/avtr10.jpg
+    - assets/avtr11.jpg
+    - assets/avtr12.jpg
+    - assets/avtr13.jpg
+    - assets/avtr14.jpg
+    - assets/avtr15.jpg
+    - assets/avtr16.jpg
+    - assets/avtr17.jpg
+    - assets/avtr18.jpg
+    - assets/avtr19.jpg
+    - assets/avtr2.jpg
+    - assets/avtr20.jpg
+    - assets/avtr21.jpg
+    - assets/avtr22.jpg
+    - assets/avtr23.jpg
+    - assets/avtr24.jpg
+    - assets/avtr3.jpg
+    - assets/avtr4.jpg
+    - assets/avtr5.jpg
+    - assets/avtr6.jpg
+    - assets/avtr7.jpg
+    - assets/avtr8.jpg
+    - assets/avtr9.jpg
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  fonts:
+    - family: OpenSans-Italic
+      fonts:
+        - asset: fonts/OpenSans-Italic.ttf
+    - family: OpenSans-regular
+      fonts:
+        - asset: fonts/OpenSans-regular.ttf
+    - family: Jost-VariableFont_wght
+      fonts:
+        - asset: fonts/Jost-VariableFont_wght.ttf
+    - family: Jost-Italic-VariableFont_wght
+      fonts:
+        - asset: fonts/Jost-Italic-VariableFont_wght.ttf
+    - family: MontserratAlternates-Black
+      fonts:
+        - asset: fonts/MontserratAlternates-Black.ttf
+    - family: MontserratAlternates-BlackItalic
+      fonts:
+        - asset: fonts/MontserratAlternates-BlackItalic.ttf
+    - family: MontserratAlternates-Bold
+      fonts:
+        - asset: fonts/MontserratAlternates-Bold.ttf
+    - family: MontserratAlternates-BoldItalic
+      fonts:
+        - asset: fonts/MontserratAlternates-BoldItalic.ttf
+    - family: MontserratAlternates-ExtraBold
+      fonts:
+        - asset: fonts/MontserratAlternates-ExtraBold.ttf
+    - family: MontserratAlternates-ExtraBoldItalic
+      fonts:
+        - asset: fonts/MontserratAlternates-ExtraBoldItalic.ttf
+    - family: MontserratAlternates-ExtraLight
+      fonts:
+        - asset: fonts/MontserratAlternates-ExtraLight.ttf
+    - family: MontserratAlternates-ExtraLightItalic
+      fonts:
+        - asset: fonts/MontserratAlternates-ExtraLightItalic.ttf
+    - family: MontserratAlternates-Italic
+      fonts:
+        - asset: fonts/MontserratAlternates-Italic.ttf
+    - family: MontserratAlternates-Light
+      fonts:
+        - asset: fonts/MontserratAlternates-Light.ttf
+    - family: MontserratAlternates-LightItalic
+      fonts:
+        - asset: fonts/MontserratAlternates-LightItalic.ttf
+    - family: MontserratAlternates-Medium
+      fonts:
+        - asset: fonts/MontserratAlternates-Medium.ttf
+    - family: MontserratAlternates-MediumItalic
+      fonts:
+        - asset: fonts/MontserratAlternates-MediumItalic.ttf
+    - family: MontserratAlternates-Regular
+      fonts:
+        - asset: fonts/MontserratAlternates-Regular.ttf
+    - family: MontserratAlternates-SemiBold
+      fonts:
+        - asset: fonts/MontserratAlternates-SemiBold.ttf
+    - family: MontserratAlternates-SemiBoldItalic
+      fonts:
+        - asset: fonts/MontserratAlternates-SemiBoldItalic.ttf
+    - family: MontserratAlternates-Thin
+      fonts:
+        - asset: fonts/MontserratAlternates-Thin.ttf
+    - family: MontserratAlternates-ThinItalic
+      fonts:
+        - asset: fonts/MontserratAlternates-ThinItalic.ttf
+    - family: Rubik-VariableFont_wght
+      fonts:
+        - asset: fonts/Rubik-VariableFont_wght.ttf
+    - family: Rubik-Italic-VariableFont_wght
+      fonts:
+        - asset: fonts/Rubik-Italic-VariableFont_wght.ttf
+
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages

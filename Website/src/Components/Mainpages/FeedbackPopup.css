@@ -1,0 +1,139 @@
+.feedback-popup-overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+  }
+  
+  .feedback-popup {
+    background-color: #e6faf9;
+    padding: 15px;
+    border-radius: 10px;
+    width: 500px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .emoji-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .emoji-item {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .emoji {
+    cursor: pointer;
+    font-size: 24px; /* Adjust the font size as needed */
+    filter: grayscale(100%); /* Apply grayscale filter to make black and white */
+  }
+  
+  .emoji.selected {
+    filter: none; /* Remove filter for the selected emoji */
+  }
+  
+  .emoji-label {
+    margin-top: 5px; /* Adjust spacing between emoji and label */
+    color: #A5E0DD;
+  }
+  
+  .selected-label {
+    color: #105955; /* Change the color of the selected label */
+  }
+  
+
+
+
+ 
+
+
+  .question-container {
+    margin-top: 20px;
+    padding: 1px;
+    border-radius: 5px;
+    background-color: #A5E0DD; /* Change background color */
+  }
+  
+  .question-container p {
+    font-weight: bold;
+  }
+  
+  .radio-options {
+    display: flex;
+    flex-direction: column;
+  }
+  
+ .question-container .radio-options label {
+    cursor: pointer;
+    margin-left: -115px;
+  } 
+  
+   
+.comment textarea{
+    width:97%;
+    height: 90%;
+    resize: none;
+}
+
+
+
+.feedbacksubmit button{
+    background-color: #5B8B88;
+    border-radius: 10px;
+    width: 50%;
+    margin-left: 25%;
+}
+
+
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    color: aliceblue;  
+  }
+  
+  .close:hover {
+    color: red;
+  }
+  
+
+  @media (max-width: 768px) {
+    .feedback-popup {
+      margin-top:20px;
+      width: 90%; /* Adjust the width for smaller screens */
+      max-width: 400px; /* Set a maximum width */
+      height: 90%;
+      max-height: 400px;
+      overflow-y: auto; /* Enable vertical scrolling if needed */
+    }
+  
+    .feedback-popup-overlay {
+      align-items: flex-start; /* Align items to the start */
+    }
+  
+    .close {
+      margin-top: -20px;
+      right: 10px;
+      cursor: pointer;
+      color: aliceblue;  
+    }
+
+    .feedbacksubmit button {
+      width: 100%; /* Adjust the width of the submit button */
+      margin-left: 0; /* Remove left margin */
+    }
+  
+    .question-container .radio-options label {
+      margin-left: 0; /* Remove left margin */
+    }
+  }

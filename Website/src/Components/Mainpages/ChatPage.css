@@ -1,0 +1,367 @@
+
+
+
+.text-container {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 400px;
+  margin-top: 180px;
+  justify-content: flex-end;
+  
+  height: 25px; /* This centers the content vertically in the viewport */
+/*  z-index: 1;  Ensure the text container stays above the message container */
+}
+
+.text-container textarea{
+  resize: none;
+}
+
+.message-container {
+  overflow-y: auto; /* Enable vertical scrolling */
+  height: 370px;
+  padding-right: 20px; /* Add padding to prevent content from sticking to the scrollbar */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+
+
+.microphone-icon {
+  margin-right: 1px;
+  width: 25px;
+  height: 25px;
+}
+
+
+.speakericon{
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+}
+
+.message-user,
+.message-other {
+  word-wrap: break-word; /* Allow long words to break and wrap */
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  width: fit-content;
+}
+ 
+.message-user {
+  background-color: #95B7B7; /* Set background color for user messages */
+ /*  margin-left: 680px;  */
+ margin-left: 702px;
+ max-width: 460px;
+
+}
+
+.message-other {
+  background-color: #E8DDD9; /* Set background color for other messages */
+  margin-left:280px;
+  max-width:400px;
+}
+
+.message-table-user{
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  background-color: #E8DDD9; /* Set background color for other messages */
+  margin-left:280px;
+  max-width:400px;
+  overflow-x: auto;
+  overflow-y: auto;
+}
+
+.container{
+  padding-bottom: 120px;
+}
+
+
+/* toggle button */
+
+.toggling{
+  margin-left: 450px;
+  margin-top: 50px;
+  
+}
+
+.toggle-button {
+  background-color: #ddd;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  height: 30px;
+  width: 155px;
+}
+
+.slider {
+  background-color: #fff; /* Default color for slider */
+  border-radius: 50%;
+  bottom: 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  content: '';
+  left: 0;
+  position: absolute;
+  transition: 0.4s;
+  width: 30px;
+  height: 30px;
+}
+
+.toggle-button.toggled .slider {
+  background-color: #526564; /* Change color to green when toggled */
+  transform: translateX(125px);
+}
+
+.toggle-button.toggled {
+  background-color: #95B7B7; /* Change color to green when toggled */
+
+}
+
+
+/* table style */
+
+.custom-table {
+  width: 50%;
+  border-collapse: collapse;
+}
+
+.custom-table th, .custom-table td {
+  border: 1px solid #dddddd;
+  padding: 8px;
+}
+
+.custom-table th {
+  background-color: #f2f2f2;
+  text-align: left;
+}
+
+.even-row {
+  background-color: #f9f9f9;
+}
+
+.odd-row {
+  background-color: #ffffff;
+}
+
+.custom-table th:first-child, .custom-table td:first-child {
+  border-left: none;
+}
+
+.custom-table th:last-child, .custom-table td:last-child {
+  border-right: none;
+}
+
+
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.loading-spinner {
+  animation: spin infinite 1s linear;
+}
+
+
+.button-container1 {
+  display: flex; /* Use flexbox layout */
+  justify-content: center; /* Center align buttons horizontally */
+  
+}
+
+.button-container1 button {
+  padding: 5px 10px; /* Adjust padding as needed */
+  height: 80px;
+  width: 100px;
+}
+
+
+
+
+
+
+@media (max-width: 768px) {
+  .text-container {
+    
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+    margin-top: 85px;    
+    height: 30px; /* This centers the content vertically in the viewport */
+  /*  z-index: 1;  Ensure the text container stays above the message container */
+  }
+  
+  .text-container textarea{
+    resize: none;
+    max-width: 250px;
+  }
+  
+  .message-container {
+    overflow-y: auto; /* Enable vertical scrolling */
+    height: 370px;
+    padding-right: 20px; /* Add padding to prevent content from sticking to the scrollbar */
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+  }
+  
+  
+  .microphone-icon {
+    margin-right: 1px;
+    width: 25px;
+    height: 25px;
+  }
+  
+  
+  .speakericon{
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+  }
+  
+  .message-user,
+  .message-other {
+    word-wrap: break-word; /* Allow long words to break and wrap */
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    width: fit-content;
+  }
+   
+  .message-user {
+    background-color: #95B7B7; /* Set background color for user messages */
+   /*  margin-left: 680px;  */
+   margin-left: 150px;
+   max-width: 220px;
+  }
+  
+  .message-other {
+    background-color: #E8DDD9; /* Set background color for other messages */
+    margin-left:15px;
+    max-width:280px;
+  }
+  
+  .message-table-user{
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    background-color: #E8DDD9; /* Set background color for other messages */
+    margin-left:280px;
+    max-width:400px;
+    overflow-x: auto;
+    overflow-y: auto;
+  }
+  
+  .container{
+    padding-bottom: 120px;
+  }
+  
+  .Link1{
+    margin-left: -200px;
+  }
+  
+  /* toggle button */
+  
+  .toggling{
+    margin-left: 10px;
+    margin-top: 75px;
+    position: fixed;
+    
+  }
+  
+  .toggle-button {
+    background-color: #ddd;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    height: 30px;
+    width: 155px;
+  }
+  
+  .slider {
+    background-color: #fff; /* Default color for slider */
+    border-radius: 50%;
+    bottom: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    content: '';
+    left: 0;
+    position: absolute;
+    transition: 0.4s;
+    width: 30px;
+    height: 30px;
+  }
+  
+  .toggle-button.toggled .slider {
+    background-color: #526564; /* Change color to green when toggled */
+    transform: translateX(125px);
+  }
+  
+  .toggle-button.toggled {
+    background-color: #95B7B7; /* Change color to green when toggled */
+  
+  }
+  
+  
+  /* table style */
+  
+  .custom-table {
+    width: 50%;
+    border-collapse: collapse;
+  }
+  
+  .custom-table th, .custom-table td {
+    border: 1px solid #dddddd;
+    padding: 8px;
+  }
+  
+  .custom-table th {
+    background-color: #f2f2f2;
+    text-align: left;
+  }
+  
+  .even-row {
+    background-color: #f9f9f9;
+  }
+  
+  .odd-row {
+    background-color: #ffffff;
+  }
+  
+  .custom-table th:first-child, .custom-table td:first-child {
+    border-left: none;
+  }
+  
+  .custom-table th:last-child, .custom-table td:last-child {
+    border-right: none;
+  }
+  
+  
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  .loading-spinner {
+    animation: spin infinite 1s linear;
+  }
+  
+  
+  .button-container1 {
+    display: flex; /* Use flexbox layout */
+    justify-content: center; /* Center align buttons horizontally */
+    
+  }
+  
+  .button-container1 button {
+    padding: 5px 10px; /* Adjust padding as needed */
+    height: 80px;
+    width: 100px;
+  }
+  
+}

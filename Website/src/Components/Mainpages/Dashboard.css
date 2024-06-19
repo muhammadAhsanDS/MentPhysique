@@ -1,0 +1,132 @@
+.dashboardmaincontainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-left: 255px;
+   
+  }
+  
+ 
+.dashboardcontainer1{
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+  margin-left: 1px;
+}  
+
+.choosenboxes1{
+  margin-top: 10px;
+  background-color: #5B8B88;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.yearsbox1{
+background-color: #F9DEC9;
+}
+
+.monthsbox1{
+  background-color: #F9DEC9;
+  }
+
+
+  .chart-container1 {
+    width: 450px;
+    height: 270px;
+    margin: 6px;
+    padding: 20px;
+    border: 1px #5B8B88;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px #5B8B88;
+    cursor: pointer;
+  }
+
+  .chart-container2 {
+    background-color:  #F9DEC9;
+    width: 230px;
+    height:274px;
+    margin: 6px;
+    padding: 20px;
+    border: 1px solid #5B8B88;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px #5B8B88;
+    cursor: pointer;
+  }
+
+  .chart-container3 {
+    background-color:  rgba(75, 192, 192, 0.6);
+    width: 100px;
+    height:250px;
+    margin: 6px;
+    padding: 20px;
+    border: 1px solid #5B8B88;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px #5B8B88;
+    cursor: pointer;
+  }
+ 
+  
+
+/* second row */ 
+  .dashboardcontainer2{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    cursor: pointer;
+  } 
+
+  .chart-container4 {
+    height:300px;
+    width: 425px;
+    margin: 6px;
+    padding: 20px;
+    border: 1px #5B8B88;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px #5B8B88;
+    cursor: pointer;
+  }
+
+  .chart-container5 {
+    height:300px;
+    width: 425px;
+    margin: 6px;
+    padding: 20px;
+    border: 1px #5B8B88;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px #5B8B88;
+    cursor: pointer;
+  }
+
+  h3 {
+    text-align: center;
+    color: #333;
+  }
+  
+  /* Optional: Style for responsiveness */
+  
+
+  @media (max-width: 768px) {
+    .dashboardmaincontainer {
+      margin-left: 0; /* Remove left margin */
+      justify-content: center; /* Center align items */
+    }
+  
+    .dashboardcontainer1,
+    .dashboardcontainer2 {
+      flex-direction: column; /* Change to column layout on smaller screens */
+      align-items: center; /* Center align items */
+    }
+  
+    .chart-container1,
+    .chart-container2,
+    .chart-container3,
+    .chart-container4,
+    .chart-container5 {
+      width: 90%; /* Adjust width to fit smaller screens */
+      max-width: 400px; /* Set maximum width */
+      margin: 10px auto; /* Center align and add margin */
+      height: auto; /* Allow height to adjust based on content */
+    }
+  }
+  

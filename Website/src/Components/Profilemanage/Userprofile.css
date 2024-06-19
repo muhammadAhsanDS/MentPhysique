@@ -1,0 +1,244 @@
+
+  
+  .top-content {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; /* Add space between header and form */
+    position: absolute;
+    top: -20px;
+    left: 500px;
+  }
+  
+  .logoimg {
+    height: 100px; /* Adjust the height as needed */
+    width: 100px; /* Adjust the width as needed */
+  }
+  
+  h1 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #526564;
+  }  
+
+  .sign-up-formprofile {
+    align-items: center;
+    width: 60%;
+    height: 80%;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 20px #95B7B7;
+    margin-left: 340px;
+    margin-top:25px;
+  }
+  
+ .insidecontent{
+  margin-left: 70px;
+ }
+
+  .sign-up-formprofile h2 {
+    text-align: center;
+    color: #95B7B7;
+    font-size: 35px;
+    font-weight: 700;
+  }
+  
+  
+  
+
+  .form-group {
+    margin-bottom: 10px;
+    width: 48%; /* Set the width to 48% to fit two inputs in a single row */
+  }
+
+  .form-group1 {
+    margin-bottom: 10px;
+    width: 5%; /* Set the width to 48% to fit two inputs in a single row */
+    margin-left: 200px;
+  }
+  
+  label {
+    display: block;
+    font-weight: 500;
+    color: #526564;
+    margin-left: 25px;
+  }
+  
+  input {
+    width: 150%;
+    padding: 10px;
+    background-color: #F1F1F1;
+    border: 1px solid #F1F1F1;
+    border-radius: 15px;
+    border: 1px solid #95B7B7;
+    width: 200px;
+    margin-left: 25px;
+  }
+  
+
+
+.label1{
+    display: block;
+    font-weight: 500;
+    color: #526564;
+    margin-left: 100px;
+}
+
+  button {
+    border: none;
+  background-color: #5B8B88; /* Set the button background color */
+  color: white; /* Set the text color */
+  padding: 10px 20px; /* Set padding for the button */
+  border-radius: 25px; /* Set a border-radius for rounded edges */
+  cursor: pointer; /* Change the cursor on hover */
+  font-size: 16px; /* Set the font size */
+  width: 200px;
+  margin-left: 220px;
+  }
+  
+  button:hover {
+    background-color: #526564; /* Change the background color on hover */
+  }
+
+  .editiconclass{
+    height: 40px;
+  }
+  
+.message-box1{
+  margin-left: -80px;
+  color: #526564;
+}
+
+/* avatar */
+
+.avatar-selection {
+  cursor: pointer;
+}
+
+.avatar-circle {
+  width: 135px; /* Adjust the width of the circle */
+  height: 135px; /* Adjust the height of the circle */
+  border-radius: 50%; /* Make it a circle */
+  border: 2px solid #95B7B7; /* Add border */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 250px;
+}
+
+.avatar-circle img,
+.avatar-circle span {
+  max-width: 100%; /* Ensure the image or text fits within the circle */
+  max-height: 100%; /* Ensure the image or text fits within the circle */
+  border-radius: 50%;
+}
+  
+
+
+
+
+
+@media (max-width: 768px) {
+
+/* Add these styles to your CSS file */
+
+.top-content {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px; /* Add space between header and form */
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.logoimg {
+  height: 100px; /* Adjust the height as needed */
+  width: 100px; /* Adjust the width as needed */
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #526564;
+}  
+
+.sign-up-formprofile {
+  align-items: center;
+  width: 80%; /* Adjust the width */
+  height: auto; /* Adjust the height */
+  padding: 40px;
+  background-color: white;
+  box-shadow: 0 0 20px #95B7B7;
+  margin: 0px auto; /* Center the form */
+}
+
+.insidecontent {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sign-up-formprofile h2 {
+  text-align: center;
+  color: #95B7B7;
+  font-size: 35px;
+  font-weight: 700;
+}
+
+.form-group{
+  margin-bottom: 5px;
+  width: 20%; /* Set width to 100% for full width */
+  margin-left: -10px;
+}
+.form-group1 {
+  margin-left: 2%; /* Set width to 100% for full width */
+  
+}
+
+.label1{
+  display: block;
+  font-weight: 500;
+  color: #526564;
+  margin-left: 2%;
+}
+label {
+  display: block;
+  font-weight: 500;
+  color: #526564;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+input {
+  max-width: 90%; /* Set width to 100% for full width */
+  padding: 10px;
+  background-color: #F1F1F1;
+  border: 1px solid #F1F1F1;
+  border-radius: 15px;
+  margin-bottom:5px;
+  border: 1px solid #95B7B7;
+ 
+}
+
+button {
+  margin-left: 5%;
+  width: 100%; /* Set width to 100% for full width */
+  margin-top: 20px; /* Add margin-top for spacing */
+}
+
+.avatar-circle {
+  width: 135px; /* Adjust the width of the circle */
+  height: 135px; /* Adjust the height of the circle */
+  border-radius: 50%; /* Make it a circle */
+  border: 2px solid #95B7B7; /* Add border */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto; /* Center the avatar */
+}
+
+
+
+}
+
+
+  

@@ -1,0 +1,197 @@
+.Registercontainer{
+ display: flex;
+ margin-top: 30px;
+}
+.logoname{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-bottom: 20px; /* Add space between header and form */
+}
+
+
+.registerlogoimg {
+  position: absolute;
+  max-height: 100px;  
+  max-width: 110px; 
+  margin-top: -50px;
+  }
+
+
+ .logoname h2{
+    position: absolute;
+    left: 2%;
+    top: -5px;
+    font-weight: normal;
+    color: black;
+  }
+
+  .registerform{
+    width: 52%;
+    height: 100%;
+    padding: 16px;
+    justify-content: end;
+    margin-left: 42%;
+  }
+.message-box1{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  color: red;
+}
+
+.registerform h2{
+  text-align: center;
+  color: #5B8B88;
+  font-size: 40px;
+  font-weight: bold;
+
+}
+
+.header-image1{
+    width: 60px;
+    height: 400px;
+    margin-top: 100px;
+    display: flex;
+    margin-left: 55px;
+}
+
+
+.form-group {
+    margin-bottom: 8px;
+    width: 48%; /* Set the width to 48% to fit two inputs in a single row */
+  }
+  
+ .registerform label {
+    display: block;
+    font-weight: 500;
+    color: #526564;
+    margin-left: 25px;
+  }
+  
+ .registerform input {
+    width: 173%;
+    padding: 10px;
+    background-color: #F1F1F1;
+    border: 1px solid #F1F1F1;
+    border-radius: 15px;
+    width: 200px;
+  }
+
+.registerform button {
+  border: none;
+  background-color: #5B8B88; /* Set the button background color */
+  color: white; /* Set the text color */
+  padding: 10px 20px; /* Set padding for the button */
+  border-radius: 25px; /* Set a border-radius for rounded edges */
+  cursor: pointer; /* Change the cursor on hover */
+  font-size: 20px; /* Set the font size */
+  width: 200px;
+  align-items: center;
+  }
+  
+  .registerform button:hover {
+    background-color: #526564; /* Change the background color on hover */
+  }
+
+ .form-row {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .link {
+    margin-left: 220px;
+    color: #526564; /* Set the link text color to a preferred color */
+    font-weight: 20%;
+  }
+  
+  .link:hover {
+    color: #95B7B7; /* Change link color on hover (optional) */
+  }
+
+
+ 
+  
+
+  @media (max-width: 768px) {
+    .Registercontainer {
+      display: flex;
+      flex-direction: column;
+      margin-top: 10px;
+    }
+  
+    .logoname {
+      margin-bottom: 10px;
+    }
+  
+    .registerlogoimg {
+      max-height: 70px;
+      max-width: 80px;
+      margin-top: -20px;
+      margin-left: -3px;
+    }
+  
+    .logoname h2 {
+      margin-left: 50px;
+      top: -5px;
+      font-weight: normal;
+      color: black;
+    }
+  
+    .registerform {
+      width: 90%;
+      margin: 0 auto; /* Center align form */
+    }
+  
+    .message-box1 {
+      justify-content: center;
+      align-items: center;
+      color: red;
+      margin-bottom: 10px;
+    }
+  
+    .registerform h2 {
+      font-size: 30px;
+      text-align: center; /* Center align heading */
+    }
+  
+  .header-image1 {
+      width: 50%;
+      max-width: 100px;
+      height: 300px;
+      margin-top: 50px;
+      margin-left: 5px;
+    }
+  
+    .form-group {
+      width: 100%; /* Full width */
+      margin-bottom: 15px;
+    }
+  
+    .registerform label {
+      margin-left: 0;
+      text-align: left; /* Left align label */
+    }
+  
+    .registerform input {
+      width: 100%;
+      padding: 10px;
+      background-color: #F1F1F1;
+      border: 1px solid #F1F1F1;
+      border-radius: 15px;
+      box-sizing: border-box; /* Ensure padding is included in width */
+      margin-left: -10px;
+    }
+  
+    .registerform button {
+      width: 50%;
+      margin-top: 10px;
+      margin-left: 100px;
+    }
+  
+    .link {
+      text-align: center;
+      margin-top: 10px;
+      margin-left: 100px;
+    }
+  }

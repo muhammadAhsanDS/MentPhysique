@@ -1,0 +1,211 @@
+.Logincontainer{
+  display: flex;
+  margin-top: 25px;
+ }
+ .logoname{
+     display: flex;
+     flex-direction: row;
+     align-items: flex-start;
+     margin-bottom: 20px; /* Add space between header and form */
+ }
+
+ .logginlogoimg {
+  position: absolute;
+  max-height: 100px;  
+  max-width: 110px; 
+  margin-top: -45px;
+  }
+
+  .logoname h2{
+     position: absolute;
+     left: 7%;
+     top: -5px;
+     font-weight: normal;
+     color: black;
+   }
+ 
+   .loginform{
+      width: 48%;
+      height: 100%;
+      padding: 20px;
+      border: none;
+      background-color: white;
+      margin-left: -10px;
+      margin-top: 50px;
+   }
+ .message-box2{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: red;
+ }
+ 
+ .loginform h2{
+   text-align: center;
+   color: #5B8B88;
+   font-size: 40px;
+   font-weight: bold;
+ 
+ }
+ 
+ .header-image2{
+  width: 60px;
+  height: 400px;
+  margin-top: 100px;
+  display: flex;
+  margin-left:30px ;
+}
+
+ 
+ 
+ .form-group {
+  margin-bottom: 1px;
+   /* Set the width to 48% to fit two inputs in a single row */
+   }
+   
+   .form-row {
+      display: flex;
+      justify-content: space-between;
+
+    }
+    
+
+  .label1 {
+     display: block;
+     font-weight: 500;
+     color: #526564;
+     margin-left: 100px;
+   }
+   
+  .loginform .input1 {
+      width: 150%;
+      padding: 10px;
+      background-color: #F1F1F1;
+      border: 1px solid #F1F1F1;
+      border-radius: 15px;
+      width: 400px;
+      margin-left: 100px;
+   }
+ 
+ .loginform button {
+   border: none;
+   background-color: #5B8B88; /* Set the button background color */
+   color: white; /* Set the text color */
+   padding: 10px 20px; /* Set padding for the button */
+   border-radius: 25px; /* Set a border-radius for rounded edges */
+   cursor: pointer; /* Change the cursor on hover */
+   font-size: 20px; /* Set the font size */
+   width: 200px;
+   align-items: center;
+   }
+   
+   .loginform button:hover {
+     background-color: #526564; /* Change the background color on hover */
+   }
+ 
+
+   .link {
+     margin-left: 220px;
+     color: #526564; /* Set the link text color to a preferred color */
+     font-weight: 20%;
+   }
+   
+   .link:hover {
+     color: #95B7B7; /* Change link color on hover (optional) */
+   }
+ 
+ 
+  
+
+/* 768px */
+   @media (max-width: 768px) {
+    .Logincontainer {
+      display: flex;
+      flex-direction: column;
+      margin-top: 10px;
+    
+    }
+  
+    .logoname {
+      margin-bottom: 10px;
+    }
+  
+    .logginlogoimg {
+      max-height: 70px;
+      max-width: 80px;
+      margin-top: -20px;
+      margin-left: -3px;
+    }
+  
+    .logoname h2 {
+      margin-left: 25px;
+      top: -5px;
+      font-weight: normal;
+      color: black;
+    }
+  
+    .loginform {
+      width: 90%;
+      padding: 20px;
+      border: none;
+      background-color: white;
+      margin-top: 20px; /* Adjust margin top */
+      margin-left: 0; /* Reset margin left */
+    }
+  
+    .message-box2 {
+      justify-content: center;
+      align-items: center;
+      color: red;
+      margin-bottom: 10px;
+    }
+  
+    .loginform h2 {
+      font-size: 30px;
+      text-align: center; /* Center align heading */
+      color: #5B8B88;
+      font-weight: bold;
+    }
+  
+    .header-image2 {
+      display: none;
+    }
+  
+    .form-group {
+      margin-bottom: 8px; /* Adjust margin bottom */
+      margin-left: -20%;
+    }
+  
+    .label1 {
+      display: block;
+      font-weight: 500;
+      color: #526564;
+      text-align: left; /* Left align label */
+      margin-left: 0; /* Reset margin left */
+    }
+  
+    .loginform .input1 {
+      
+      width: 600%;
+      padding: 10px;
+      background-color: #F1F1F1;
+      border: 1px solid #F1F1F1;
+      border-radius: 15px;
+      box-sizing: border-box; /* Ensure padding is included in width */
+    }
+  
+    .loginform button {
+      width: 60%;
+      margin-left: 20%;
+      margin-top: 10px;
+    }
+  
+    .link {
+      text-align: center;
+      margin-top: 10px;
+      margin-left: 21%;
+    }
+  }
+
+
+

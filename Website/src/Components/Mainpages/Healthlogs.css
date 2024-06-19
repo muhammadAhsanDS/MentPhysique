@@ -1,0 +1,106 @@
+.healthlogcontainer{
+  text-align: center;
+
+}
+
+.logheading{
+  font-size: 32px;
+  margin-bottom: 20px;
+  margin-left: 300px;
+}
+
+.healthlogcontainer1{
+  background-color: #F9F3EF;;
+  margin-left: 350px;
+  display: flex;
+  width: 70%;
+  height: 490px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  align-items: center;
+}
+
+.choosenboxes{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.exercisetracking{
+  margin-top: 30px;
+}
+
+.exerciseheading{
+  display: inline-block;
+  padding: 2px;
+  border: 1px solid #95B7B7;
+  border-radius: 6px; 
+  background-color: whitesmoke;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  color: #526564;
+  font-weight: bold;
+}
+
+.calorietracking{
+  margin-top: 30px;
+}
+
+.calorieheading{
+  display: inline-block;
+  padding: 2px;
+  border: 1px solid #95B7B7;
+  border-radius: 6px; 
+  background-color: whitesmoke;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  color: #526564;
+  font-weight: bold;
+}
+
+
+.mentaltracking{
+  margin-top: 30px;
+}
+
+.mentalheading{
+  display: inline-block;
+  padding: 2px;
+  border: 1px solid #95B7B7;
+  border-radius: 6px; 
+  background-color: whitesmoke;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  color: #526564;
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 1200px) {
+  .logheading {
+    margin-left: 200px; /* Adjust margin for smaller screens */
+  }
+
+  .healthlogcontainer1 {
+    margin-left: 50px; /* Adjust margin for smaller screens */
+    width: 120%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .logheading {
+    margin-left: 50px; /* Adjust margin for even smaller screens */
+  }
+
+  .healthlogcontainer1 {
+    margin-left: 20px; /* Adjust margin for even smaller screens */
+  }
+}
+
+
